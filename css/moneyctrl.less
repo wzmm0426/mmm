@@ -1,0 +1,115 @@
+.header{
+  display: flex;
+  flex: 1;
+  .left{
+    padding-top: .1rem;
+    img{
+      width: .2rem;
+      height: .2rem;
+      line-height: .2rem;
+    }
+  }
+  .mid{
+    text-align: center;
+    font-size: .3rem;
+    color:#FFF;
+    height: 100%;
+    width: 60%;
+    flex: 12;
+    line-height: .5rem  ;
+  }
+  .right{
+    float: right;
+    flex: 1;
+  }
+}
+
+
+
+
+
+.main{
+  height: 100%;
+  //background-color: pink;
+  padding-top: .1rem;
+  border-bottom: 1px solid #ccc;
+  li{
+    height: 1.22rem;
+    img{
+      width: 1rem;
+      height: 1rem;
+      float: left;
+      margin-left: .1rem;
+      margin-right: .1rem;
+    }
+    .main-right{
+      overflow: hidden;
+      font-size: .16rem;
+      padding-left: .2rem;
+      padding-bottom: .5rem;
+      span{
+        color:orange;
+
+      }
+      .pirce{
+        color:red;
+        font-size: .30rem;
+        margin-top: .1rem;
+      }
+      .content-footer{
+
+
+        span{
+          display: block;
+          color:#CCC;
+        }
+      }
+    }
+  }
+
+  .mui-icon-chat {
+    font-size: 12px;
+    float: right;
+    padding-right: 10px;
+  }
+}
+
+
+
+.page{
+  height: 50px;
+  background-color: #fff;
+  padding: 8px;
+
+  div{
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+
+    button{
+      background-image: linear-gradient(#fff,#ebebeb);
+    }
+    select{
+      width: 80px;
+      height: 36px;
+      border:1px solid #bababa !important;
+      padding: 0;
+      padding-left: 10px;
+      //渲染风格
+      //appearance:none;
+      //-moz-appearance:none;
+      //-webkit-appearance:none;
+      /*设置箭头*/
+      background: url("../images/arrow.png") no-repeat scroll right center transparent;
+    }
+  }
+
+
+}
+
+
+.footer{
+  position: relative;
+  bottom: 0;
+}

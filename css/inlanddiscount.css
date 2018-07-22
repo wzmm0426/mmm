@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  flex: 1;
+}
+.header .left {
+  padding-top: .1rem;
+}
+.header .left img {
+  width: .2rem;
+  height: .2rem;
+  line-height: .2rem;
+}
+.header .mid {
+  text-align: center;
+  font-size: .3rem;
+  color: #FFF;
+  height: 100%;
+  width: 60%;
+  flex: 12;
+  line-height: .5rem  ;
+}
+.header .right {
+  float: right;
+  flex: 1;
+}
+.shoplist {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  background-color: #fff;
+  float: left;
+}
+.shoplist a {
+  width: 50% ;
+}
+.shoplist a .pic {
+  height: 3.71rem;
+  padding-left: .1rem;
+}
+.shoplist a .pic img {
+  width: 2rem;
+  height: 2rem;
+  margin: 0 auto;
+}
+.shoplist a .pic p:nth-of-type(1) {
+  margin-bottom: .4rem;
+  margin-top: .3rem;
+  font-weight: bold;
+  font-size: .16rem;
+  color: #000000;
+}
+.shoplist a .pic p:nth-of-type(2) {
+  color: red;
+}

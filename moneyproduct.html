@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  
+  <link rel="stylesheet" href="./css/bass.css">
+  <link rel="stylesheet" href="./css/moneyproduct.css">
+ 
+
+  <title>my国内折扣</title>
+</head>
+<body>
+
+
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    
+   
+       <!--头部-->
+       <div class="header">
+    
+         <a class="left mui-pull-left" href="javascript:history.go(-1);">
+           <span class="mui-icon mui-icon mui-icon-back"></span>
+         </a>
+    
+         <div class="middle">
+      
+           国内折扣
+    
+         </div>
+         <div class="right">
+           <img src="./images/header_app.png" alt="">
+         </div>
+       </div>
+    
+      <div class="view">
+       
+       
+       <!--主体部分-->
+       
+       
+       
+       <div class="main">
+    
+    <!--模板-->
+       
+  
+  
+       </div>
+  
+  
+        <div class="flist">
+          <!--模板2-->
+  
+        </div>
+  
+  
+       <div class="gobuy">
+    
+         <a href="">前往购买</a>
+  
+       </div>
+        
+        <div class="footer_pinlun">
+          
+          
+          
+          <!--<div class="shurukuang">-->
+            <!--<div class="form">-->
+            <!--<textarea name="" id="" cols="30" rows="10"></textarea>-->
+            <!--<div class="fabiao mui-clearfix">-->
+              <!--<input class="mui-pull-right"  name="" value="发表评论"  type="submit">-->
+            <!--</div>-->
+          <!--</div>-->
+          <!--</div>-->
+
+
+          
+          <div class="common">
+            <!--模板3-->
+          </div>
+        <!--<div class="list">-->
+            <!--模版3-->
+            <!--<ul>-->
+              <!--<li>-->
+                <!--&lt;!&ndash; 左侧用户图片 &ndash;&gt;-->
+                <!--<div class="userimg">-->
+                  <!--<img src="http://home.manmanbuy.com/upface/face/1466230634_162.jpg">-->
+                <!--</div>-->
+                <!--&lt;!&ndash; 右侧评论内容 &ndash;&gt;-->
+                <!--<div class="pinlun-right">-->
+                    <!--<div class="name mui-clearfix">-->
+                      <!---->
+                      <!--<div class="username">赶鸭子上架</div>-->
+
+                       <!--<div class="time">2016/10/25 14:18:45</div>-->
+
+                      <!--</div>-->
+                    <!--<div class="content">比超市便宜了几块</div>-->
+                <!--</div>-->
+              <!--</li>-->
+            <!--</ul>-->
+          <!--</div>-->
+
+
+        </div>
+        
+        <div class="mdaohang">
+            <ul class="mui-clearfix">
+                <li><a href="index.html">首页 &gt; </a></li>
+                <li><a href="moneyctrl.html">超值推荐 &gt; </a></li>
+                <li><a class="pro" href="javascript:;">移动端凑单品：海天 鲜味 生抽 1.28L</a></li>
+            </ul>
+        </div>
+
+        
+        
+        
+     </div>
+  
+  
+    <div class="link">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="top"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+    </div>
+  
+    <div class="footer">
+      <p><a href="#" class="app">手机APP下载</a> <a href="#" class="phone">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+    
+    
+    
+    
+    
+      </div>
+    
+
+  
+  
+</div>
+
+
+
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/moneyproduct.js"></script>
+
+<script type="text/html" id="tpl">
+ 
+  {{each result v i }}
+  <div class="title">
+  
+    <!--模板-->
+  <h4>{{v.productName}}</h4>
+           <p class="price">{{v.productPinkage}}</p>
+      
+           <div class="message">
+             <span>{{v.productFrom}}</span>
+             <span>{{v.productTime}}</span>
+             <span>{{v.productTips}}</span>
+             <span>{{v.productComCount}}</span>
+           </div>
+      
+           <div class="content">
+            {{v.productInfo}}
+           </div>
+           <div class="smimg">
+           {{@ v.productImg2}}
+           </div>
+           <div class="lgimg">
+             {{@ v.productImgLg}}
+           </div>
+  </div>
+           {{/each}}
+</script>
+
+
+<script  type="text/html" id="tpl2">
+  {{@ result[0].productCity}}
+</script>
+
+<script  type="text/html" id="tpl3">
+  {{@ result[0].productComment}}
+  
+</script>
+</body>
+</html>

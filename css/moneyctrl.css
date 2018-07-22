@@ -1,0 +1,90 @@
+.header {
+  display: flex;
+  flex: 1;
+}
+.header .left {
+  padding-top: .1rem;
+}
+.header .left img {
+  width: .2rem;
+  height: .2rem;
+  line-height: .2rem;
+}
+.header .mid {
+  text-align: center;
+  font-size: .3rem;
+  color: #FFF;
+  height: 100%;
+  width: 60%;
+  flex: 12;
+  line-height: .5rem  ;
+}
+.header .right {
+  float: right;
+  flex: 1;
+}
+.main {
+  height: 100%;
+  padding-top: .1rem;
+  border-bottom: 1px solid #ccc;
+}
+.main li {
+  height: 1.22rem;
+}
+.main li img {
+  width: 1rem;
+  height: 1rem;
+  float: left;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+.main li .main-right {
+  overflow: hidden;
+  font-size: .16rem;
+  padding-left: .2rem;
+  padding-bottom: .5rem;
+}
+.main li .main-right span {
+  color: orange;
+}
+.main li .main-right .pirce {
+  color: red;
+  font-size: .30rem;
+  margin-top: .1rem;
+}
+.main li .main-right .content-footer span {
+  display: block;
+  color: #CCC;
+}
+.main .mui-icon-chat {
+  font-size: 12px;
+  float: right;
+  padding-right: 10px;
+}
+.page {
+  height: 50px;
+  background-color: #fff;
+  padding: 8px;
+}
+.page div {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+.page div button {
+  background-image: linear-gradient(#ffffff, #ebebeb);
+}
+.page div select {
+  width: 80px;
+  height: 36px;
+  border: 1px solid #bababa !important;
+  padding: 0;
+  padding-left: 10px;
+  /*设置箭头*/
+  background: url("../images/arrow.png") no-repeat scroll right center transparent;
+}
+.footer {
+  position: relative;
+  bottom: 0;
+}

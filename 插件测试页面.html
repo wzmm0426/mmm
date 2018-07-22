@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <style type="text/css">
+    .mask {
+      position: absolute; top: 0px; filter: alpha(opacity=60); background-color: #777;
+      z-index: 1002; left: 0px;
+      opacity:0.5; -moz-opacity:0.5;
+    }
+  </style>
+</head>
+<body>
+
+<div id="mask" class="mask"></div>
+<a href="javascript:;" onclick="showMask()" >点我显示遮罩层</a><br />
+</body>
+<script src="./lib/jq/jquery.min.js"></script>
+<script type="text/javascript">
+    //兼容火狐、IE8
+    //显示遮罩层
+    function showMask(){
+      $("#mask").css("height",$(document).height());
+      $("#mask").css("width",$(document).width());
+      $("#mask").show();
+    }
+    //隐藏遮罩层
+    function hideMask(){
+  
+      $("#mask").hide();
+    }
+    $("#mask").on("click",function () {
+      hideMask()
+    })
+   
+</script>
+</html>

@@ -1,0 +1,48 @@
+.main {
+  height: 100%;
+  padding-top: .1rem;
+  border-bottom: 1px solid #ccc;
+}
+.main li {
+  height: 1.22rem;
+}
+.main li img {
+  width: 1rem;
+  height: 1rem;
+  float: left;
+  margin-left: .1rem;
+}
+.main li .main-right {
+  overflow: hidden;
+  font-size: .16rem;
+  padding-left: .2rem;
+}
+.main li .main-right .pirce {
+  color: red;
+  font-size: .30rem;
+  margin-top: .1rem;
+}
+.main li .main-right span {
+  padding-right: .1rem;
+}
+.page {
+  height: 50px;
+  background-color: #fff;
+  padding: 8px;
+}
+.page div {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+  text-align: center;
+}
+.page div button {
+  background-image: linear-gradient(#ffffff, #ebebeb);
+}
+.page div select {
+  width: 80px;
+  height: 36px;
+  border: 1px solid #bababa !important;
+  padding: 0;
+  padding-left: 10px;
+}

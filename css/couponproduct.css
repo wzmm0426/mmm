@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  flex: 1;
+  background-color: red;
+}
+.header .left {
+  padding-top: .1rem;
+}
+.header .left img {
+  width: .2rem;
+  height: .2rem;
+  line-height: .2rem;
+}
+.header .mid {
+  text-align: center;
+  font-size: .3rem;
+  color: #FFF;
+  height: 100%;
+  width: 60%;
+  flex: 12;
+  line-height: .5rem  ;
+}
+.header .right {
+  float: right;
+  flex: 1;
+}
+.main {
+  height: 100%;
+  padding-top: .1rem;
+  border-bottom: 1px solid #ccc;
+}
+.main li {
+  height: 1.22rem;
+}
+.main li a img {
+  width: 1rem;
+  height: .8rem;
+  float: left;
+  margin-left: .1rem;
+  margin-right: .1rem;
+}
+.main li .main-right {
+  overflow: hidden;
+  padding-left: .1rem;
+  font-size: 12px;
+}
+.main li .main-right .pirce {
+  color: red;
+  font-size: .30rem;
+  margin-top: .1rem;
+}
+.main li .main-right .content-footer em {
+  color: orange !important;
+}
+.main .mui-icon-chat {
+  font-size: 12px;
+  float: right;
+  padding-right: 10px;
+}
+.mask {
+  position: absolute;
+  top: 0px;
+  background-color: #777;
+  z-index: 100;
+  left: 0px;
+  opacity: .8;
+}
+.mask img {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 101;
+  transform: translate(-50%, -50%);
+  opacity: 1 !important;
+}

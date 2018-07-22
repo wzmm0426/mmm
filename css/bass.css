@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  line-height: 0;
+}
+.hidden {
+  display: none !important;
+}
+.showii {
+  display: block !important;
+}
+.header {
+  width: 100%;
+  height: .5rem;
+  background-color: #ff841d;
+}
+.header .left {
+  float: left;
+  height: 100%;
+  padding: .1rem;
+}
+.header .left img {
+  height: 100%;
+  width: 1.5rem;
+}
+.header .right {
+  float: right;
+  height: 100%;
+  padding: .1rem;
+}
+.header .right img {
+  height: 100%;
+  width: .34rem;
+}
+.search {
+  height: .5rem;
+  padding: .1rem;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: .1rem;
+}
+.search input {
+  position: absolute;
+  width: 87%;
+  border-radius: 2.1rem;
+  border: none;
+  background-color: #f1f1f1;
+  height: .3rem;
+  padding: .1rem;
+  font-size: .13rem;
+}
+.search button {
+  position: absolute;
+  right: .1rem;
+  height: .3rem;
+  padding: 0 .15rem;
+  background-color: #ff841d;
+  border: none;
+  color: #fff;
+  border-radius: 1.1rem;
+  font-size: .14px;
+}
+.bread-nav {
+  height: .4rem;
+  line-height: .4rem;
+  background-image: linear-gradient(#ffffff, #ebebeb);
+}
+.bread-nav .bread-left {
+  padding-left: .1rem;
+}
+.bread-nav .bread-left a {
+  float: left;
+  padding: 0 .05rem;
+  font-size: .16rem;
+}
+.bread-nav .bread-right {
+  padding-right: .1rem;
+}
+.bread-nav .bread-right button {
+  background-image: linear-gradient(#ebebeb, #ffffff);
+  vertical-align: middle;
+  width: .50rem;
+  height: .30rem;
+  text-align: center;
+  border-radius: .1rem;
+}
+.link {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 34px;
+  font-size: 12px;
+}
+.link a {
+  float: left;
+  display: block;
+  width: 33.33%;
+  text-align: center;
+  height: 100%;
+  line-height: 34px;
+  border: 1px solid #c4c4c4;
+  border-left: none;
+}
+.link a:last-child {
+  border-right: none;
+}
+.link a img {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+}
+.footer {
+  height: .6rem;
+}
+.footer p {
+  text-align: center;
+  font-size: .12rem;
+  margin-bottom: 0rem;
+}
+.footer p .app {
+  color: #f00;
+}
+body {
+  font-size: 12px !important;
+}
+@media only screen and (max-width: 1080px), only screen and (max-device-width: 1080px) {
+  html,
+  body {
+    font-size: 168.75px;
+  }
+}
+@media only screen and (max-width: 960px), only screen and (max-device-width: 960px) {
+  html,
+  body {
+    font-size: 150px;
+  }
+}
+@media only screen and (max-width: 800px), only screen and (max-device-width: 800px) {
+  html,
+  body {
+    font-size: 125px;
+  }
+}
+@media only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
+  html,
+  body {
+    font-size: 112.5px;
+  }
+}
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+  html,
+  body {
+    font-size: 100px;
+  }
+}
+@media only screen and (max-width: 600px), only screen and (max-device-width: 600px) {
+  html,
+  body {
+    font-size: 93.75px;
+  }
+}
+@media only screen and (max-width: 540px), only screen and (max-device-width: 540px) {
+  html,
+  body {
+    font-size: 84.375px;
+  }
+}
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+  html,
+  body {
+    font-size: 75px;
+  }
+}
+@media only screen and (max-width: 414px), only screen and (max-device-width: 414px) {
+  html,
+  body {
+    font-size: 64.6875px;
+  }
+}
+@media only screen and (max-width: 400px), only screen and (max-device-width: 400px) {
+  html,
+  body {
+    font-size: 62.5px;
+  }
+}
+@media only screen and (max-width: 375px), only screen and (max-device-width: 375px) {
+  html,
+  body {
+    font-size: 58.59375px;
+  }
+}
+@media only screen and (max-width: 360px), only screen and (max-device-width: 360px) {
+  html,
+  body {
+    font-size: 56.25px;
+  }
+}
+@media only screen and (max-width: 320px), only screen and (max-device-width: 320px) {
+  html,
+  body {
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 240px), only screen and (max-device-width: 240px) {
+  html,
+  body {
+    font-size: 37.5px;
+  }
+}

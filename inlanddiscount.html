@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/bass.css">
+  <link rel="stylesheet" href="./css/inlanddiscount.css">
+  <link rel="icon" href="./images/bitbug_favicon.ico">
+  <title>国内折扣</title>
+</head>
+<body>
+
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    <div class="view">
+      <!--头部-->
+      <div class="header">
+        
+        <a class="left mui-pull-left" href="index.html">
+          <img src="./images/icback.svg"  alt="">
+        </a>
+        <div class="mid">
+          国内折扣
+        </div>
+        <div class="right">
+          <img src="./images/header_app.png" alt="">
+        </div>
+      </div>
+      
+      <!--搜索框-->
+      <div class="search">
+        
+        <input type="text" placeholder="请输入你想比价的商品">
+        <button>搜索</button>
+      </div>
+    
+    </div>
+
+
+    <div class="shoplist">
+      
+    
+      <!--商品列表模板-->
+      
+      
+    </div>
+
+
+
+
+
+
+
+
+    
+  </div>
+</div>
+<!--底部-->
+<!--<div class="link">-->
+  <!--<a href="#">登录</a>-->
+  <!--<a href="#">注册</a>-->
+  <!--<a href="#" class="top"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>-->
+<!--</div>-->
+
+<!--<div class="footer">-->
+  <!--<p><a href="#" class="app">手机APP下载</a> <a href="#" class="phone">慢慢买手机版</a> &#45;&#45; 掌上比价平台-->
+  <!--</p>-->
+  <!--<p>m.manmanbuy.com</p>-->
+<!--</div>-->
+</body>
+
+
+
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/bass.js"></script>
+<script src="./js/inlanddiscount.js"></script>
+<!--// 列表的渲染-->
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <a href="inlandproduct.html?productId={{v.productId}}">
+  <div class="pic">
+    {{@ v.productImg}}
+    <p>{{v.productName}}</p>
+    <p>{{v.productPrice}}</p>
+    <p>{{v.productTime}}</p>
+  </div>
+  </a>
+{{/each}}
+</script>
+
+<script type="text/html" id="tpl2">
+
+
+</script>
+
+</html>

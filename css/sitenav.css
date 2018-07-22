@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  flex: 1;
+}
+.header .left {
+  padding-top: .1rem;
+}
+.header .left img {
+  width: .2rem;
+  height: .2rem;
+  line-height: .2rem;
+}
+.header .mid {
+  text-align: center;
+  font-size: .3rem;
+  color: #FFF;
+  height: 100%;
+  width: 60%;
+  flex: 12;
+  line-height: .5rem  ;
+}
+.header .right {
+  float: right;
+  flex: 1;
+}
+.main-middle {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: .1rem;
+}
+.main-middle a {
+  padding: .1rem .15rem;
+  background-color: #F4F4F4;
+  border: 1px solid #ccc;
+  margin-bottom: .05rem;
+  margin-right: .05rem  ;
+  float: left;
+}
+.main-middle a img {
+  width: .12rem;
+  height: .12rem;
+  display: inline-block;
+}

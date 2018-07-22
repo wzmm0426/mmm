@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <!--<link rel="stylesheet" href="./lib/swiper/css/swiper.min.css">-->
+  <link rel="stylesheet" href="./css/bass.css">
+  <link rel="stylesheet" href="./css/蔬菜价格.css">
+  <link rel="icon" href="./images/bitbug_favicon.ico">
+  <title>白菜价</title>
+</head>
+<body>
+
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    
+    
+    <div class="view">
+    
+      <div class="header">
+      
+        <a class="left mui-pull-left" href="index.html">
+          <img src="./images/icback.svg"  alt="">
+        </a>
+        <div class="mid">
+          白菜价-淘宝内部券
+        </div>
+        <div class="right">
+          <a href="javascript:;" class="icon-app"></a>
+        </div>
+      </div>
+      
+  
+    </div>
+    
+    
+    <!--滑动滚动-->
+    <div class="nav">
+  
+      <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+        <div class="mui-scroll nav_list">
+        
+        <!--滑动导航模板-->
+        
+          
+        </div>
+      </div>
+    </div>
+    
+    
+    <!--列表内容开始-->
+    
+    
+    <div class="content">
+      <ul>
+      
+      </ul>
+      
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- 底部 -->
+    <!--<div class="link">-->
+      <!--<a href="#">登录</a>-->
+      <!--<a href="#">注册</a>-->
+      <!--<a href="#" class="top"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>-->
+    <!--</div>-->
+    <!---->
+    <!--<div class="footer">-->
+      <!--<p><a href="#" class="app">手机APP下载</a> <a href="#" class="phone">慢慢买手机版</a> &#45;&#45; 掌上比价平台-->
+      <!--</p>-->
+      <!--<p>m.manmanbuy.com</p>-->
+    <!--</div>-->
+  </div>
+</div>
+</body>
+
+
+
+<script src="./lib/mui/js/mui.min.js"></script>
+<!--<script src="./lib/zepto/zepto.min.js"></script>-->
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./lib/jq/jquery.min.js"> </script>
+<script src="./js/bass.js"></script>
+<script src="./js/蔬菜价格.js"></script>
+
+<!--菜单栏渲染-->
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <a href="baicaijia.html?titleId={{v.titleId}}" class="mui-control-item  {{ 0==v.setId?'mui-active':''}}">{{v.title}}</a>
+{{/each}}
+</script>
+
+
+<!--// 列表的渲染-->
+<script type="text/html" id="tpl2">
+  
+ {{each result v i}}
+    <li>
+      <a href=""> </a>
+      <div class="pic">
+        {{@ v.productImg}}
+      </div>
+      <div class="inf">
+        <div class="i">
+          <div class="t">
+            {{@ v.productName}}
+          </div>
+          <div class="pr">
+            <i>券后</i>
+            {{@ v.productPrice}}
+          </div>
+        </div>
+  
+  
+  
+        <div class="o">
+          {{@ v.productCouponRemain}}
+          <div class="b clearfix">
+            <div class="q">
+              {{@ v.productCoupon}}
+            </div>
+            <div class="g">
+              {{@ v.productHref}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+ {{/each}}
+</script>
+
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/bass.css">
+  <link rel="stylesheet" href="./css/product.css">
+  <link rel="icon" href="./images/bitbug_favicon.ico">
+  <title>商品详情</title>
+</head>
+<body>
+
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    <div class="view">
+      <!--头部-->
+      <div class="header">
+        
+        <a class="left" href="index.html">
+          <img src="./images/header_logo.png" alt="">
+        </a>
+        <div class="right">
+          <img src="./images/header_app.png" alt="">
+        </div>
+      </div>
+      
+      <!--搜索框-->
+      <div class="search">
+        
+        <input type="text" placeholder="请输入你想比价的商品">
+        <button>搜索</button>
+      </div>
+  
+      <!--面包屑-->
+      <div class="bread-nav">
+        <div class="bread-left mui-pull-left">
+          
+          <!--面包屑模板-->
+          
+        </div>
+        <div class="bread-right mui-pull-right">
+          <button>筛选</button>
+        </div>
+      </div>
+      
+     <!--商品详情-->
+   <div class="main">
+      <!-- 模板 -->
+
+      
+  </div>
+  <div class="back">
+        
+  </div>
+  <div class="comment">
+  <h5>去购买去购买去购买去购买去购买去购买去购买</h5>
+</div>
+<div class="prductpinlun">
+
+</div>
+
+    <div class="user">
+      <div class="pinlun">
+        傻B网友的评论
+      </div>
+      <div class="user_content">
+        
+      </div>
+    </div>
+
+    </div>
+
+    <!-- 底部 -->
+    <div class="link">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="top"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+    </div>
+
+    <div class="footer">
+      <p><a href="#" class="app">手机APP下载</a> <a href="#" class="phone">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+
+  </div>
+</div>
+</body>
+  
+  
+  
+  <script src="./lib/mui/js/mui.min.js"></script>
+  <script src="./lib/zepto/zepto.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/bass.js"></script>
+  <script src="./js/product.js"></script>
+
+
+
+  <!--面包屑渲染开始-->
+  <script type="text/html" id="tpl">
+  
+    {{each result v i}}
+  
+    <a href="index.html">首页 ></a>
+    <a href="category.html">全部分类 ></a>
+    <a href="">{{v.category}}</a>
+  
+    {{/each }}
+
+</script>
+
+
+  <!--// 商品详情的渲染-->
+  <script type="text/html" id="tpl2">
+    {{ each result v i}}
+    <p>{{v.productName}}</p>
+    <div class="pic">
+     {{@v.productImg}}
+    </div>
+    <div class="table">
+      <ul>
+        <li class="active"><a href="">比价购买</a></li>
+        <li><a href="">产品参数</a></li>
+        <li><a href="">优选评价</a></li>
+      </ul>
+    </div>
+    <!-- 价格 -->
+  <!-- <div class="main-price">
+    <div class="logo"><img src="http://sf.manmanbuy.com/images/sitelogo/1.png"></div>
+    <div class="where">京东商城</div>
+    <div class="price">￥1999.00</div>
+    <div class="btn"><button>去购买</button></div>
+  </div> -->
+
+{{/each}}
+</script>
+
+<!-- 店名渲染 -->
+<script type="text/html" id="tpl3">
+
+  {{each result v i}}
+  {{@ v.bjShop}}
+  {{/each}}
+
+</script>
+
+
+<!-- 店名渲染 -->
+<script type="text/html" id="tpl4">
+
+
+  {{each result v i}}
+<div class="username_left">
+  {{v.comName}}
+</div>
+<p>{{v.comTime}}</p>
+<p>{{v.comFrom}}</p>
+<div class="user_text">
+{{v.comContent}}
+</div>
+{{/each}}
+
+
+</script>
+</html>

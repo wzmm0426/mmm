@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/bass.css">
+  <link rel="stylesheet" href="./css/brand.css">
+  <link rel="icon" href="./images/bitbug_favicon.ico">
+  <title>十大品牌排行榜</title>
+</head>
+<body>
+
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    
+    
+    <div class="view">
+      <!--头部-->
+      <div class="header">
+      
+        <a class="left" href="index.html">
+          <img src="./images/header_logo.png" alt="">
+        </a>
+        <div class="right">
+          <img src="./images/header_app.png" alt="">
+        </div>
+      </div>
+    
+      <!--搜索框-->
+      <div class="search">
+      
+        <input type="text" placeholder="请输入你想比价的商品">
+        <button>搜索</button>
+      </div>
+  
+    </div>
+    
+    
+    
+    
+    
+  
+  
+    <!--面包开始-->
+    <div class="bread-nav">
+      <div class="bread-left mui-pull-left">
+      
+      
+        <a href="index.html">首页 > </a>
+        <a href="category.html">全部分类</a>
+    
+      </div>
+    </div>
+  
+    <!--热门品牌-->
+    <div class="banner">
+      <div class="banner-content">
+        哪个牌子好
+      </div>
+    </div>
+  
+    <!--列表开始-->
+    <div class="content">
+      <ul class="clearfix">
+      
+        <!--列表模板-->
+        
+        
+      </ul>
+    </div>
+  
+    <!--销量排行-->
+    <div class="banner">
+      <div class="banner-content">
+        销量排行
+      </div>
+    </div>
+    
+    
+    <div class="xiaoliang-content">
+  
+      <ul>
+  
+      <!--销量模板-->
+      
+      </ul>
+      
+      
+    </div>
+  
+    <!--最新评论-->
+    <div class="banner">
+      <div class="banner-content">
+        最新评论
+      </div>
+    </div>
+  
+    <div class="pinlun-content">
+      
+      <ul>
+  
+        <!--评论模板-->
+      
+      </ul>
+      
+      
+    </div>
+  
+    
+    
+    <!-- 底部 -->
+    <div class="link">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="top"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+    </div>
+    
+    <div class="footer">
+      <p><a href="#" class="app">手机APP下载</a> <a href="#" class="phone">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+</div>
+</body>
+
+
+
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/bass.js"></script>
+<script src="./js/brand.js"></script>
+
+
+<!--// 列表的渲染-->
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <li>
+    <span class="mui-icon mui-icon mui-icon-forward mui-pull-right"></span>
+    <a href="productlist.html?categoryid={{v.categoryId}}&pageid=1">
+      <i>{{i+1}}</i>
+      <div class="info">
+        <div class="title mui-ellipsis">
+          {{v.brandName}}
+        </div>
+        <p class="mui-ellipsis">{{v.brandInfo }}</p>
+      </div>
+    </a>
+  </li>
+{{/each}}
+</script>
+
+<script type="text/html" id="tpl2">
+  {{each result v i}}
+  <li>
+    <a href="product.html?&categoryId={{v.categoryId}}&productName
+={{v.productName}}&productId={{v.productId}}&page=1" class="list-content" >
+      
+     {{@v.productImg}}
+      
+      <div class="main-right">
+        
+        {{v.productName}}
+        
+        <p class="pirce">{{v.productPrice}}</p>
+        <em class="star mui-pull-right">★★★★★</em>
+        <span>{{v.productQuote}}</span><span>{{v.productCom}}</span>
+      </div>
+    </a>
+  </li>
+
+  {{/each}}
+
+</script>
+
+
+<script type="text/html" id="tpl3">
+  
+  {{each result v i}}
+  <li>
+    <a href="product.html?&amp;categoryId=0&amp;productName&#10;=乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视&amp;productId=1&amp;page=1" class="list-content">
+      
+      <img src="http://pro.zuyushop.com:8015/ProPic/201510/Thumb/Thumb_201510001104382491.jpg" alt="乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视" width="100" height="100">
+      
+      <div class="main-right">
+        
+        乐视TV(Letv) 超3 X55 55英寸智能LED液晶 超级电视 4K超清电视
+      
+      
+      
+      </div>
+      
+      <div class="main-txt">
+        <div class="triangle"></div>
+        <span class="user">{{v.comName}}:</span><span class="star2">★★★★★</span><br>
+        
+       {{v.comContent }}
+       
+       
+      </div>
+    
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+</html>

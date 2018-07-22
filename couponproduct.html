@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/bass.css">
+  <link rel="stylesheet" href="./css/couponproduct.css">
+  <link rel="icon" href="./images/bitbug_favicon.ico">
+  <title>优惠券</title>
+</head>
+<body>
+
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    <div class="view">
+    
+      <div class="header">
+      
+        <a class="left mui-pull-left" href="index.html">
+          <img src="./images/icback.svg"  alt="">
+        </a>
+        <div class="mid">
+          优惠券
+        </div>
+        <div class="right">
+          <img src="./images/header_app.png" alt="">
+        </div>
+      </div>
+  
+  
+    </div>
+  
+  <div class="tishi mui-text-center" style="color:#ccc" >
+  
+    --点餐前出示手机中的优惠券，即可享受优惠--
+
+  </div>
+  <div class="main">
+  
+    <ul>
+    
+      <!--商品模板-->
+      
+    </ul>
+  
+  </div>
+  
+  
+
+  
+  
+  
+  
+    <!-- 底部 -->
+    <div class="link">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="top"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+    </div>
+    
+    <div class="footer">
+      <p><a href="#" class="app">手机APP下载</a> <a href="#" class="phone">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+</div>
+</body>
+
+
+
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/bass.js"></script>
+<script src="./js/couponproduct.js"></script>
+
+<!--// 列表的渲染-->
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <li>
+    <a href="">
+      
+      {{@v.couponProductImg }}
+      <div class="main-right">
+        
+        {{v.couponProductName}}
+      
+      </div>
+      
+      <h3>{{v.couponProductPrice
+        }}</h3>
+      <span class="content-footer">
+              <span style="color:orange">{{v.couponProductTime}}</span>
+              </span>
+    </a>
+    <div id="mask" class="mask" style="display: none">
+    
+       {{@ v.couponProductImg}}
+  
+    </div>
+  </li>
+{{/each}}
+</script>
+
+</html>

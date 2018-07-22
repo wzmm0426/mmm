@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./lib/mui/css/mui.min.css">
+  <link rel="stylesheet" href="./css/bass.css">
+  <link rel="stylesheet" href="./css/brandTitle.css">
+  <link rel="icon" href="./images/bitbug_favicon.ico">
+  <title>品牌大全</title>
+</head>
+<body>
+
+<div class="mui-scroll-wrapper">
+  <div class="mui-scroll">
+    <div class="view">
+      <!--头部-->
+      <div class="header">
+        
+        <a class="left" href="index.html">
+          <img src="./images/header_logo.png" alt="">
+        </a>
+        <div class="right">
+          <img src="./images/header_app.png" alt="">
+        </div>
+      </div>
+    </div>
+    
+    <!--热门品牌-->
+    <div class="banner">
+      <div class="banner-content">
+        热门品牌排行
+      </div>
+    </div>
+  <!--面包开始-->
+    <div class="bread-nav">
+      <div class="bread-left mui-pull-left">
+      
+      
+        <a href="index.html">首页 > </a>
+        <a href="category.html">全部分类</a>
+        
+      </div>
+    </div>
+  
+  
+    
+    
+    
+    <!--列表开始-->
+    <div class="list">
+    
+      <ul class="mui-table-view mui-table-view-chevron">
+      
+      <!--列表模板开始-->
+      
+      
+      </ul>
+      
+  
+  
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <!-- 底部 -->
+    <div class="link">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#" class="top"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+    </div>
+    
+    <div class="footer">
+      <p><a href="#" class="app">手机APP下载</a> <a href="#" class="phone">慢慢买手机版</a> -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+</div>
+</body>
+
+
+
+<script src="./lib/mui/js/mui.min.js"></script>
+<script src="./lib/zepto/zepto.min.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/bass.js"></script>
+<script src="./js/brandTitle.js"></script>
+
+
+<!--// 列表的渲染-->
+<script type="text/html" id="tpl">
+  {{each result v i}}
+  <li class="mui-table-view-cell mui-collapse list-head">
+    <a class="mui-navigate-right" data-id="0" href="brand.html?brandtitleid={{v.brandTitleId}}">
+      {{v.brandTitle }}
+    </a>
+  </li>
+{{/each}}
+</script>
+
+<script type="text/html" id="tpl2">
+
+
+</script>
+
+</html>
